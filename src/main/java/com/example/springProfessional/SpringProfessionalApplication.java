@@ -19,7 +19,8 @@ public class SpringProfessionalApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Order order = new Order(8080, 215.00, 5.00);
+        Order order = new Order(1309, 95.90, 00.00);
+
         System.out.println("Pedido codigo: " + order.getCode());
         System.out.println("Valor total: R$ " + orderService.total(order));
     }

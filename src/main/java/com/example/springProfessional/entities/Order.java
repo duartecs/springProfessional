@@ -38,4 +38,8 @@ public class Order {
         this.discount = discount;
     }
 
+    public Double getNetValue() {
+        return basic - ((discount/100)*basic);
+    }
+
 }
